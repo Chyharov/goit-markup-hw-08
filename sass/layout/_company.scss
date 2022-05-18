@@ -1,0 +1,49 @@
+.company__section {
+    Padding-top: 94px;
+    Padding-bottom: 94px;
+  }
+  
+  .section__title {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  
+  .company__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+  }
+  
+  .company__item {
+    z-index: -94;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .company__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  
+  .company__description {
+    padding: 27px;
+    position: absolute;
+    width: 370px;
+    background-color: rgba(47, 48, 058, 0.8);
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color)
+  }

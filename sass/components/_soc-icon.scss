@@ -1,0 +1,58 @@
+.soclist__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soclist__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: var(--transition-hover-focus);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
+}
+
+.soclist__icon {
+  fill: currentColor;
+}
+
+.follow__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.follow__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.follow__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.follow__icon {
+  fill: currentColor;
+}
