@@ -150,9 +150,6 @@
   background-color: var(--accent-color);
 }
 
-.form__subscribe {
-}
-
 .label__subscribe {
   display: flex;
   flex-direction: column;
@@ -202,10 +199,6 @@
   }
 }
 
-.icon__subscribe {
-  margin-left: 10px;
-}
-
 .button__subscribe {
   width: 200px;
   @include flex(center, null);
@@ -224,7 +217,7 @@
   }
 }
 
-.container__subscribe {
+.subscribe {
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
@@ -234,8 +227,9 @@
       @include flex(center, null);
     }
   }
+}
 
-  &__icon {
-    margin-left: 10px;
-  }
+
+.icon__subscribe {
+  margin-left: 10px;
 }

@@ -32,6 +32,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually__hidden {
@@ -127,33 +129,16 @@ body {
 
 .header__container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
-.header__contact {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: var(--transition-hover-focus);
-}
-
-.header__contact:hover, .header__contact:focus {
-  color: var(--accent-color);
-}
-
-.header__icon {
-  text-align: center;
-  align-items: center;
-  fill: currentColor;
-  margin-right: 10px;
+@media screen and (max-width: 1200px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav {
@@ -161,8 +146,30 @@ body {
   align-items: center;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__item {
+  position: relative;
+  margin-left: 50px;
+}
+
+.nav__item:first-child {
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item:first-child {
+    margin-left: 93px;
+  }
 }
 
 .nav__link {
@@ -183,42 +190,72 @@ body {
   color: var(--accent-color);
 }
 
-.nav__list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-@media screen and (max-width: 767px) {
-  .nav__list {
-    display: none;
-  }
-}
-
-.header-contacts {
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
-@media screen and (max-width: 767px) {
-  .header-contacts {
-    display: none;
-  }
-}
-
-.navlink__curred {
+.curred {
   color: var(--accent-color);
 }
 
-.navlink__curred::after {
+.curred::after {
+  position: absolute;
   display: block;
-  content: "";
+  content: '';
   height: 4px;
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
-  transform: translateY(27px);
+  transform: translateY(29px);
+}
+
+.header__icon {
+  text-align: center;
+  align-items: center;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: var(--transition-hover-focus);
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 767px) {
+  .contacts .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .hero {
@@ -802,10 +839,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.icon__subscribe {
-  margin-left: 10px;
-}
-
 .button__subscribe {
   width: 200px;
   display: flex;
@@ -827,19 +860,19 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .container__subscribe {
+  .subscribe {
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container__subscribe__form {
+  .subscribe__form {
     display: flex;
     align-items: center;
   }
 }
 
-.container__subscribe__icon {
+.icon__subscribe {
   margin-left: 10px;
 }
 
@@ -990,6 +1023,12 @@ body {
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-contacts {
+    display: none;
+  }
+}
+
 .mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
@@ -1028,6 +1067,12 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-soc__item {
+    display: none;
+  }
+}
+
 .mobile-soc__link {
   font-weight: 500;
   font-size: 18px;
@@ -1060,7 +1105,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .header__logo {
-    margin-right: 93px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
