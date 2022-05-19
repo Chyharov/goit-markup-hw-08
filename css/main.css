@@ -396,9 +396,15 @@ body {
   text-align: left;
 }
 
-.company__section {
-  Padding-top: 94px;
-  Padding-bottom: 94px;
+.company {
+  padding-top: 0px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .company {
+    display: block;
+  }
 }
 
 .section__title {

@@ -1,7 +1,11 @@
-.company__section {
-    Padding-top: 94px;
-    Padding-bottom: 94px;
+.company {
+  padding-top: 0px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
+}
   
   .section__title {
     margin-bottom: 50px;
