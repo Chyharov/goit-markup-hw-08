@@ -941,6 +941,12 @@ body {
   line-height: 1.88;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+
 .button__toggle {
   width: 40px;
   height: 40px;
@@ -1023,12 +1029,6 @@ body {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-contacts {
-    display: none;
-  }
-}
-
 .mobile-contacts__mail {
   font-weight: 500;
   font-size: 24px;
@@ -1065,12 +1065,6 @@ body {
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-soc__item {
-    display: none;
-  }
 }
 
 .mobile-soc__link {
