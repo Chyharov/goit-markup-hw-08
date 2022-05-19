@@ -1,8 +1,25 @@
 .button__list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-top: -15px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include flex(center, center);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.button__item {
+  margin-top: 15px;
 }
 
 .button__item:not(:last-child) {
