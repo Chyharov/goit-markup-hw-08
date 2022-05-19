@@ -1,5 +1,10 @@
 .feature__section {
   padding-top: 94px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    padding-top: 60px;
+  }
 }
 
 .feature {
@@ -12,13 +17,23 @@
   padding: 0;
   list-style: none;
 
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
   &__item {
     width: calc((100% - 90px) / 4);
     /* background-color: tomato; */
+
+    @media screen and (max-width: 480px) {
+    }
   }
 
   &__item:not(:last-child) {
     margin-right: 30px;
+
+    @media screen and (max-width: 480px) {
+    }
   }
 
   &__title {
@@ -27,6 +42,18 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (max-width: 480px) {
+      
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: var(--primary-text-color);
+    }
   }
 
   &__icon {
@@ -38,5 +65,14 @@
     background-color: var(--background-color-section);
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 480px) {
+      text-align: center;
+      width: 450px;
+      height: 120px;
+
+      background-color: var(--background-color-section);
+      border-radius: 4px;
+    }
   }
 }

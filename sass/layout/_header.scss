@@ -1,9 +1,15 @@
 .header {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+   
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (max-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   &__container {
     display: flex;
@@ -72,10 +78,24 @@
   }
 }
 
-.navigation {
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navlink__curred {
@@ -91,3 +111,4 @@
   border-radius: 2px;
   transform: translateY(27px);
 }
+
