@@ -95,7 +95,7 @@ body {
 }
 
 .section__title {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -118,7 +118,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -422,6 +422,7 @@ body {
 }
 
 .feature__description {
+  color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -437,16 +438,6 @@ body {
   .company {
     display: block;
   }
-}
-
-.section__title {
-  margin-bottom: 50px;
-  margin-top: 0px;
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
 }
 
 .company__list {
@@ -1413,10 +1404,10 @@ button {
   position: relative;
   display: block;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-left: 36px;
+  padding-left: 24px;
   margin-bottom: 30px;
   color: var(--title-text-color);
 }
@@ -1429,7 +1420,7 @@ button {
 .icon-checkbox {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0px;
   transform: translateY(-50%);
   width: 16px;
   height: 15px;

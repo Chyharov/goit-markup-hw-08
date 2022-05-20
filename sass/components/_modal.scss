@@ -202,11 +202,11 @@
   display: block;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
-  padding-left: 36px;
+  padding-left: 24px;
   margin-bottom: 30px;
 
   color: var(--title-text-color);
@@ -220,7 +220,7 @@
 .icon-checkbox {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0px;
   transform: translateY(-50%);
 
   width: 16px;
