@@ -63,6 +63,7 @@
 .mobile-nav__link {
   @include font(500, 40px, null, 0.02em);
   color: var(--primary-text-color);
+  line-height: 47px;
 
   transition: color var(--transition);
 
@@ -87,7 +88,7 @@
 .mobile-contacts {
   &__mail {
     @include font(500, 24px, 1.17, 0.02em);
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
   }
   &__tel {
     @include font(500, 34px, 1.18, 0.02em);

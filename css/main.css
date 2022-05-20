@@ -1008,6 +1008,7 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  line-height: 47px;
   transition: color var(--transition);
 }
 
@@ -1032,7 +1033,7 @@ body {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
 }
 
 .mobile-contacts__tel {
